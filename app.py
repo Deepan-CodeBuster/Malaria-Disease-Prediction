@@ -21,7 +21,7 @@ def preprocess_image(image):
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Image', width=300, use_column_width=False)
+    st.image(image, caption='Uploaded Image', width=300, use_container_width=False)
 
     if st.button("Predict"):
         processed = preprocess_image(image)
